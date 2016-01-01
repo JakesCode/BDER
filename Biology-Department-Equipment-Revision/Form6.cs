@@ -39,10 +39,14 @@ namespace BDER
             if (bug.Checked)
             {
                 issuesList.Add("bug");
-            } else if (enhancement.Checked)
+            }
+
+            if (enhancement.Checked)
             {
                 issuesList.Add("enhancement");
-            } else if (question.Checked)
+            }
+
+            if (question.Checked)
             {
                 issuesList.Add("question");
             }
