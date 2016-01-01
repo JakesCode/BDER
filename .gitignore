@@ -17,6 +17,9 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# Stupid installer
+dist/Install [3.3.0.5].exe
+
 # =========================
 # Operating System Files
 # =========================
@@ -45,3 +48,4 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+Biology-Department-Equipment-Revision/bin/Debug/data/pat.bio

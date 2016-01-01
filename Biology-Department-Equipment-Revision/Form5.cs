@@ -7,59 +7,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Outlook = Microsoft.Office.Interop.Outlook;
-using System.Reflection;
-using Octokit;
-using Octokit.Internal;
 
 namespace BDER
 {
-    public partial class issueCheckbox : Form
+    public partial class Form5 : Form
     {
-        public issueCheckbox()
+        public Form5()
         {
             InitializeComponent();
         }
 
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/settings/tokens/new");
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
-            if (!(issues.Checked))
-            {
-                var feedback = textBox1.Text;
-                Outlook.Application oApp = new Outlook.Application();
-                Outlook._MailItem oMailItem = (Outlook._MailItem)oApp.CreateItem(Outlook.OlItemType.olMailItem);
-                oMailItem.To = "jakestr1999@gmail.com";
-                string version = Assembly.GetExecutingAssembly().GetName().Version.ToString();
-                oMailItem.Subject = "Some feedback [" + version + "]";
-                oMailItem.HTMLBody = "Some feedback: " + "<br>" + feedback.Replace("\n", "<br>") + "<p><i>Sent with BDER For Windows, running version " + version + ".</i></p>";
-                // body, bcc etc...
-                oMailItem.Display(true);
-            } else
-            {
-                gitHubStuff();
-            }
-        }
-        public async void gitHubStuff()
-        {
-            var client = new GitHubClient(new ProductHeaderValue("BDER_For_Windows"));
-            var tokenAuth = new Credentials("75f75cbabc1275500f5105adf80703604518d97a");
-            client.Credentials = tokenAuth;
-
-            var user = await client.User.Get("JakesCode");
-            MessageBox.Show(user.Name);
-            Form6 issuesBox = new Form6();
-            issuesBox.ShowDialog();
-            var createIssue = new NewIssue(issuesBox.issueName);
-            createIssue.Body = issuesBox.issueMain;
-            createIssue.Assignee = "JakesCode";
-            
-            var newIssue = await client.Issue.Create("JakesCode", "Biology-Department-Equipment-Revision-Version-2", createIssue);
-        }
-
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
+            System.IO.File.WriteAllText(@"data\pat.bio", textBox1.Text.ToString());
+            this.Close();
         }
     }
 }

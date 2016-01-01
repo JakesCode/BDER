@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using Octokit;
 
 namespace BDER
 {
@@ -24,12 +26,44 @@ namespace BDER
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private async void button1_Click(object sender, EventArgs e)
         {
-            issueName = issueTitle.Text;
-            issueMain = issuesTextbox.Text;
-            this.Close();
+            var client = new GitHubClient(new ProductHeaderValue("BDER"));
+            var tokenAuth = new Credentials(File.ReadAllText(@"data\pat.bio").ToString());
+            client.Credentials = tokenAuth;
 
+            var createIssue = new NewIssue(issueTitle.Text);
+            createIssue.Body = issuesTextbox.Text;
+            createIssue.Assignee = "JakesCode";
+            List<string> issuesList = new List<string>();
+            if (bug.Checked)
+            {
+                issuesList.Add("bug");
+            } else if (enhancement.Checked)
+            {
+                issuesList.Add("enhancement");
+            } else if (question.Checked)
+            {
+                issuesList.Add("question");
+            }
+            
+            foreach (string line in issuesList)
+            {
+                createIssue.Labels.Add(line);
+            }
+
+            if (issueTitle.Text == "" || issuesTextbox.Text == "")
+            {
+                MessageBox.Show("You have not specified either a title or body. Please rectify this issue and try again.");
+            }
+
+            if (issuesList.Count == 0)
+            {
+                MessageBox.Show("You have not selected either bug, enhancement or question.\nAt least one tag is required.");
+            } else
+            {
+                var issue = await client.Issue.Create("JakesCode", "BDER", createIssue);
+            } 
         }
     }
 }

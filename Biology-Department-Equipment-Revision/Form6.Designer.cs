@@ -34,6 +34,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.bug = new System.Windows.Forms.CheckBox();
+            this.enhancement = new System.Windows.Forms.CheckBox();
+            this.question = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // issuesTextbox
@@ -76,7 +79,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.LightGreen;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(12, 287);
+            this.button1.Location = new System.Drawing.Point(15, 318);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(378, 31);
             this.button1.TabIndex = 4;
@@ -84,12 +87,51 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // bug
+            // 
+            this.bug.AutoSize = true;
+            this.bug.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bug.ForeColor = System.Drawing.Color.Red;
+            this.bug.Location = new System.Drawing.Point(15, 288);
+            this.bug.Name = "bug";
+            this.bug.Size = new System.Drawing.Size(58, 24);
+            this.bug.TabIndex = 5;
+            this.bug.Text = "Bug";
+            this.bug.UseVisualStyleBackColor = true;
+            // 
+            // enhancement
+            // 
+            this.enhancement.AutoSize = true;
+            this.enhancement.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.enhancement.ForeColor = System.Drawing.Color.LightSeaGreen;
+            this.enhancement.Location = new System.Drawing.Point(116, 288);
+            this.enhancement.Name = "enhancement";
+            this.enhancement.Size = new System.Drawing.Size(130, 24);
+            this.enhancement.TabIndex = 6;
+            this.enhancement.Text = "Enhancement";
+            this.enhancement.UseVisualStyleBackColor = true;
+            // 
+            // question
+            // 
+            this.question.AutoSize = true;
+            this.question.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.question.ForeColor = System.Drawing.Color.MediumOrchid;
+            this.question.Location = new System.Drawing.Point(298, 287);
+            this.question.Name = "question";
+            this.question.Size = new System.Drawing.Size(95, 24);
+            this.question.TabIndex = 8;
+            this.question.Text = "Question";
+            this.question.UseVisualStyleBackColor = true;
+            // 
             // Form6
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGreen;
-            this.ClientSize = new System.Drawing.Size(402, 330);
+            this.ClientSize = new System.Drawing.Size(402, 355);
+            this.Controls.Add(this.question);
+            this.Controls.Add(this.enhancement);
+            this.Controls.Add(this.bug);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -97,6 +139,7 @@
             this.Controls.Add(this.issuesTextbox);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form6";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Add Issue";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -110,5 +153,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.CheckBox bug;
+        private System.Windows.Forms.CheckBox enhancement;
+        private System.Windows.Forms.CheckBox question;
     }
 }

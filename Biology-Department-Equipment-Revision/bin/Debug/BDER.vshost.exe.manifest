@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BDER.exe" size="1244160">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BDER.exe" size="1245184">
       <assemblyIdentity name="BDER" version="3.4.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>4OrgYCnES6XnJIB+gGKCh0VkwMrP8L9y6DgQQL4pn7g=</dsig:DigestValue>
+        <dsig:DigestValue>axdbqPJbNolUkDqT1WZmr/de6k4+Urh1CelWehk33qM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -62,7 +62,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>hLn4vR31rytygeXgoK2zf4uci3fiPLhxMkKmeqWum/8=</dsig:DigestValue>
+        <dsig:DigestValue>jatz8xoG3Y4/ZsJX5M8CxotrmKOQyNIpZcRK/w0Ku6k=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

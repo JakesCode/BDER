@@ -27,7 +27,16 @@ namespace BDER
         public appWindow()
         {
             InitializeComponent();
+            // <PUBLIC ACCESS TOKEN> //
+            string contents = File.ReadAllText(@"data/pat.bio");
+            if (contents == "")
+            {
+                Form5 accessTokenWindow = new Form5();
+                accessTokenWindow.ShowDialog();
+            }
+            // </PUBLIC ACCESS TOKEN> //
             loadedFile = false;
+
             string version = Assembly.GetExecutingAssembly().GetName().Version.ToString();
             this.Text = "BDER " + String.Format("Version {0}", version);
 
@@ -410,7 +419,7 @@ namespace BDER
 
         private void feedback_Click(object sender, EventArgs e)
         {
-            issueCheckbox feedbackForm = new issueCheckbox();
+            Form6 feedbackForm = new Form6();
             feedbackForm.ShowDialog();
         }
     }
