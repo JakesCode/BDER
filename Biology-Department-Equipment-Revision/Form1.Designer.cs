@@ -42,13 +42,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.versionLabel = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dissectionBox = new System.Windows.Forms.CheckBox();
             this.loadButton = new System.Windows.Forms.Button();
             this.feedback = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -160,13 +160,6 @@
             this.versionLabel.Name = "versionLabel";
             this.versionLabel.Click += new System.EventHandler(this.versionLabel_Click);
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::BDER.Properties.Resources.tree;
-            resources.ApplyResources(this.pictureBox2, "pictureBox2");
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.TabStop = false;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::BDER.Properties.Resources.microscope_inBox;
@@ -196,11 +189,19 @@
             this.feedback.Name = "feedback";
             this.feedback.Click += new System.EventHandler(this.feedback_Click);
             // 
+            // pictureBox2
+            // 
+            resources.ApplyResources(this.pictureBox2, "pictureBox2");
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
             // appWindow
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGreen;
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.feedback);
             this.Controls.Add(this.loadButton);
             this.Controls.Add(this.dissectionBox);
@@ -210,7 +211,6 @@
             this.Controls.Add(this.riskAssessment);
             this.Controls.Add(this.submit);
             this.Controls.Add(this.hazcards);
-            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.equipment);
             this.Controls.Add(this.period);
@@ -225,8 +225,8 @@
             this.MinimizeBox = false;
             this.Name = "appWindow";
             this.Load += new System.EventHandler(this.appWindow_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -242,7 +242,6 @@
         private System.Windows.Forms.ComboBox period;
         private System.Windows.Forms.TextBox equipment;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.TextBox hazcards;
         private System.Windows.Forms.Button submit;
         private System.Windows.Forms.CheckBox riskAssessment;
@@ -252,6 +251,7 @@
         private System.Windows.Forms.CheckBox dissectionBox;
         private System.Windows.Forms.Button loadButton;
         private System.Windows.Forms.Label feedback;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 

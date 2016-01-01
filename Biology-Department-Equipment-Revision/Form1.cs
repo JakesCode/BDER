@@ -422,5 +422,11 @@ namespace BDER
             Form6 feedbackForm = new Form6();
             feedbackForm.ShowDialog();
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            AboutBox1 about = new AboutBox1();
+            about.ShowDialog();
+        }
     }
 }

@@ -190,3 +190,4 @@ C:\Users\Jake (King of Cool)\Documents\GitHub\BDER\Biology-Department-Equipment-
 C:\Users\Jake (King of Cool)\Documents\GitHub\BDER\Biology-Department-Equipment-Revision\obj\Debug\en-GB\BDER.resources.dll
 C:\Users\Jake (King of Cool)\Documents\GitHub\BDER\Biology-Department-Equipment-Revision\obj\Debug\BDER.exe.manifest
 C:\Users\Jake (King of Cool)\Documents\GitHub\BDER\Biology-Department-Equipment-Revision\obj\Debug\BDER.application
+C:\Users\Jake (King of Cool)\Documents\GitHub\BDER\Biology-Department-Equipment-Revision\obj\Debug\BDER.AboutBox1.resources
