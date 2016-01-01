@@ -42,7 +42,7 @@ namespace BDER
         public async void gitHubStuff()
         {
             var client = new GitHubClient(new ProductHeaderValue("BDER_For_Windows"));
-            var tokenAuth = new Credentials("c38d687ad9ddf4fc8ebd0f35186dfe0aa4713e86");
+            var tokenAuth = new Credentials("75f75cbabc1275500f5105adf80703604518d97a");
             client.Credentials = tokenAuth;
 
             var user = await client.User.Get("JakesCode");
