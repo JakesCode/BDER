@@ -4,7 +4,7 @@
   <description asmv2:iconFile="microscope.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="BDER" version="3.4.0.3" language="neutral" processorArchitecture="msil" />
+    <assemblyIdentity name="BDER" version="3.4.0.4" language="neutral" processorArchitecture="msil" />
     <commandLine file="BDER.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -44,25 +44,25 @@
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="BDER.exe" size="1474560">
-      <assemblyIdentity name="BDER" version="3.4.0.3" language="neutral" processorArchitecture="msil" />
+      <assemblyIdentity name="BDER" version="3.4.0.4" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>0JoRRUNm8mYe4aP8I3V0S20sjfv/l6Heqee09spJRVE=</dsig:DigestValue>
+        <dsig:DigestValue>07BpXIA13++ghUh3y95bgYfkWsZKB1LPFnTgo4/Gf6o=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="en-GB\BDER.resources.dll" size="134144">
-      <assemblyIdentity name="BDER.resources" version="3.4.0.3" language="en-GB" processorArchitecture="msil" />
+      <assemblyIdentity name="BDER.resources" version="3.4.0.4" language="en-GB" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>dCQUGEEkIRoAXCHanbSJctVEs9KHcnRIgVitps5Pj5k=</dsig:DigestValue>
+        <dsig:DigestValue>PWZZt+6ptAzL99IHU5ye5JGtFk7c+uOJceEPTuMf2fg=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

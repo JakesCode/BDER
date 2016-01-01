@@ -66,7 +66,7 @@ namespace BDER
                 MessageBox.Show("You have not selected either bug, enhancement or question.\nAt least one tag is required.");
             } else
             {
-                var issue = await client.Issue.Create("JakesCode", "BDER", createIssue);
+                var issue = await client.Issue.Create("JakesCode", "Biology-Department-Equipment-Revision-Version-2", createIssue);
             } 
         }
     }

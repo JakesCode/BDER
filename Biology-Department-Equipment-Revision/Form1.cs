@@ -56,6 +56,7 @@ namespace BDER
 
         private void fillMenu()
         {
+            teacher.Items.Clear();
             // Populate Teacher Dropdown Menu //
             IEnumerable<String> lines = File.ReadLines("data\\teachers.bio");
             foreach (string line in lines)
