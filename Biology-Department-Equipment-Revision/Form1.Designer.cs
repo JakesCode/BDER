@@ -70,7 +70,7 @@
             resources.ApplyResources(this.calendar, "calendar");
             this.calendar.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.calendar.Name = "calendar";
-            this.calendar.Value = new System.DateTime(2015, 12, 26, 0, 0, 0, 0);
+            this.calendar.Value = new System.DateTime(2016, 1, 2, 0, 27, 31, 170);
             this.calendar.ValueChanged += new System.EventHandler(this.calendar_ValueChanged);
             // 
             // yearGroup
@@ -191,6 +191,7 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Help;
             resources.ApplyResources(this.pictureBox2, "pictureBox2");
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.TabStop = false;
@@ -220,7 +221,6 @@
             this.Controls.Add(this.teacher);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.HelpButton = true;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "appWindow";
