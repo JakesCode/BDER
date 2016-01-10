@@ -151,7 +151,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>18</value>
   </data>
   <data name="teacher.Location" type="System.Drawing.Point, System.Drawing">
     <value>27, 62</value>
@@ -175,7 +175,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;teacher.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>17</value>
   </data>
   <data name="calendar.CalendarFont" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 15pt</value>
@@ -202,7 +202,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;calendar.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>16</value>
   </data>
   <data name="yearGroup.Items" xml:space="preserve">
     <value>Year 7</value>
@@ -247,7 +247,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;yearGroup.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>15</value>
   </data>
   <data name="groups.Items" xml:space="preserve">
     <value>1 Group</value>
@@ -295,7 +295,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;groups.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <data name="period.Items" xml:space="preserve">
     <value>Period 1</value>
@@ -337,7 +337,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;period.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="equipment.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 11.25pt</value>
@@ -364,10 +364,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;equipment.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="hazcards.Location" type="System.Drawing.Point, System.Drawing">
-    <value>27, 277</value>
+    <value>27, 303</value>
   </data>
   <data name="hazcards.Size" type="System.Drawing.Size, System.Drawing">
     <value>149, 20</value>
@@ -385,7 +385,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;hazcards.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="submit.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 11.25pt</value>
@@ -397,7 +397,7 @@
     <value>447, 267</value>
   </data>
   <data name="submit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 37</value>
+    <value>121, 30</value>
   </data>
   <data name="submit.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -415,7 +415,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;submit.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="riskAssessment.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -427,7 +427,7 @@
     <value>NoControl</value>
   </data>
   <data name="riskAssessment.Location" type="System.Drawing.Point, System.Drawing">
-    <value>188, 258</value>
+    <value>188, 267</value>
   </data>
   <data name="riskAssessment.Size" type="System.Drawing.Size, System.Drawing">
     <value>112, 58</value>
@@ -450,7 +450,7 @@ assessment.</value>
     <value>$this</value>
   </data>
   <data name="&gt;&gt;riskAssessment.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -483,7 +483,7 @@ assessment.</value>
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -495,7 +495,7 @@ assessment.</value>
     <value>NoControl</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>34, 258</value>
+    <value>34, 275</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>142, 16</value>
@@ -516,7 +516,7 @@ assessment.</value>
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="versionLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -549,7 +549,7 @@ assessment.</value>
     <value>$this</value>
   </data>
   <data name="&gt;&gt;versionLabel.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -573,7 +573,7 @@ assessment.</value>
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="dissectionBox.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -585,7 +585,7 @@ assessment.</value>
     <value>NoControl</value>
   </data>
   <data name="dissectionBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>317, 266</value>
+    <value>317, 275</value>
   </data>
   <data name="dissectionBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>98, 40</value>
@@ -607,7 +607,7 @@ dissection.</value>
     <value>$this</value>
   </data>
   <data name="&gt;&gt;dissectionBox.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="loadButton.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 11.25pt</value>
@@ -616,10 +616,10 @@ dissection.</value>
     <value>NoControl</value>
   </data>
   <data name="loadButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>518, 267</value>
+    <value>447, 303</value>
   </data>
   <data name="loadButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 37</value>
+    <value>51, 28</value>
   </data>
   <data name="loadButton.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
@@ -637,7 +637,7 @@ dissection.</value>
     <value>$this</value>
   </data>
   <data name="&gt;&gt;loadButton.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="feedback.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -670,7 +670,7 @@ dissection.</value>
     <value>$this</value>
   </data>
   <data name="&gt;&gt;feedback.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -739,6 +739,36 @@ dissection.</value>
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pictureBox2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="history.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11.25pt</value>
+  </data>
+  <data name="history.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="history.Location" type="System.Drawing.Point, System.Drawing">
+    <value>504, 303</value>
+  </data>
+  <data name="history.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 28</value>
+  </data>
+  <data name="history.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="history.Text" xml:space="preserve">
+    <value>History</value>
+  </data>
+  <data name="&gt;&gt;history.Name" xml:space="preserve">
+    <value>history</value>
+  </data>
+  <data name="&gt;&gt;history.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;history.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;history.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -748,7 +778,7 @@ dissection.</value>
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>600, 323</value>
+    <value>600, 333</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

@@ -207,14 +207,6 @@ namespace BDER
                     ApplicationName = "BDER 2015",
                 });
 
-                // Define parameters of request.
-                EventsResource.ListRequest request = service.Events.List("lmaa730d1os7pj3o0dqdfe920o@group.calendar.google.com");
-                request.TimeMin = DateTime.Now;
-                request.ShowDeleted = false;
-                request.SingleEvents = true;
-                request.MaxResults = 10;
-                request.OrderBy = EventsResource.ListRequest.OrderByEnum.StartTime;
-
                 string StartTime = (year.ToString() + "/" + month.ToString() + "/" + day.ToString() + " " + hour.ToString() + ":" + minute.ToString() + ":00");
 
 
@@ -364,11 +356,6 @@ namespace BDER
 
         }
 
-        private void HelpButton_Click(object sender, EventArgs e)
-        {
-            System.Diagnostics.Process.Start("https://github.com/JakesCode/Biology-Department-Equipment-Revision-Version-2/wiki/A-Complete-Guide");
-        }
-
         private void loadButton_Click(object sender, EventArgs e)
         {
             OpenFileDialog openFileDialog1 = new OpenFileDialog();
@@ -418,6 +405,24 @@ namespace BDER
             loadedFile = true;
         }
 
+        class BiolEvent
+        {
+            public BiolEvent(string name, DateTime startTime, DateTime endTime, string description, string hazcards)
+            {
+                Name = name;
+                StartTime = startTime;
+                EndTime = endTime;
+                Description = description;
+                Hazcards = hazcards;
+            }
+
+            public string Name { get; set; }
+            public DateTime StartTime { get; set; }
+            public DateTime EndTime { get; set; }
+            public string Description { get; set; }
+            public string Hazcards { get; set; }
+        }
+
         private void feedback_Click(object sender, EventArgs e)
         {
             Form6 feedbackForm = new Form6();
@@ -428,6 +433,10 @@ namespace BDER
         {
             AboutBox1 about = new AboutBox1();
             about.ShowDialog();
+        }
+
+        private void history_Click(object sender, EventArgs e)
+        {
         }
     }
 }

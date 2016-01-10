@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form6));
-            this.issuesTextbox = new System.Windows.Forms.TextBox();
             this.issueTitle = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -37,16 +36,8 @@
             this.bug = new System.Windows.Forms.CheckBox();
             this.enhancement = new System.Windows.Forms.CheckBox();
             this.question = new System.Windows.Forms.CheckBox();
+            this.issuesTextbox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
-            // 
-            // issuesTextbox
-            // 
-            this.issuesTextbox.Location = new System.Drawing.Point(12, 91);
-            this.issuesTextbox.Multiline = true;
-            this.issuesTextbox.Name = "issuesTextbox";
-            this.issuesTextbox.Size = new System.Drawing.Size(378, 190);
-            this.issuesTextbox.TabIndex = 0;
-            this.issuesTextbox.TextChanged += new System.EventHandler(this.issuesTextbox_TextChanged);
             // 
             // issueTitle
             // 
@@ -103,7 +94,7 @@
             // 
             this.enhancement.AutoSize = true;
             this.enhancement.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.enhancement.ForeColor = System.Drawing.Color.LightSeaGreen;
+            this.enhancement.ForeColor = System.Drawing.Color.Teal;
             this.enhancement.Location = new System.Drawing.Point(116, 288);
             this.enhancement.Name = "enhancement";
             this.enhancement.Size = new System.Drawing.Size(130, 24);
@@ -115,13 +106,23 @@
             // 
             this.question.AutoSize = true;
             this.question.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.question.ForeColor = System.Drawing.Color.MediumOrchid;
+            this.question.ForeColor = System.Drawing.Color.DarkViolet;
             this.question.Location = new System.Drawing.Point(298, 287);
             this.question.Name = "question";
             this.question.Size = new System.Drawing.Size(95, 24);
             this.question.TabIndex = 8;
             this.question.Text = "Question";
             this.question.UseVisualStyleBackColor = true;
+            // 
+            // issuesTextbox
+            // 
+            this.issuesTextbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.issuesTextbox.Location = new System.Drawing.Point(12, 91);
+            this.issuesTextbox.Multiline = true;
+            this.issuesTextbox.Name = "issuesTextbox";
+            this.issuesTextbox.Size = new System.Drawing.Size(378, 190);
+            this.issuesTextbox.TabIndex = 0;
+            this.issuesTextbox.TextChanged += new System.EventHandler(this.issuesTextbox_TextChanged);
             // 
             // Form6
             // 
@@ -147,8 +148,6 @@
         }
 
         #endregion
-
-        public System.Windows.Forms.TextBox issuesTextbox;
         private System.Windows.Forms.TextBox issueTitle;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -156,5 +155,6 @@
         private System.Windows.Forms.CheckBox bug;
         private System.Windows.Forms.CheckBox enhancement;
         private System.Windows.Forms.CheckBox question;
+        public System.Windows.Forms.TextBox issuesTextbox;
     }
 }
