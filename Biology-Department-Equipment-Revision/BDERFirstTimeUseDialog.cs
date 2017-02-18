@@ -10,23 +10,21 @@ using System.Windows.Forms;
 
 namespace BDER
 {
-    public partial class Form3 : Form
+    public partial class BDERFirstTimeUseDialog : Form
     {
-        public string ReturnText { get; set;}
-
-        public Form3()
+        public BDERFirstTimeUseDialog()
         {
             InitializeComponent();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            System.Diagnostics.Process.Start("https://github.com/settings/tokens/new");
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ReturnText = textBox1.Text;
+            System.IO.File.WriteAllText(@"data\pat.bio", textBox1.Text.ToString());
             this.Close();
         }
     }

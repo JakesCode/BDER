@@ -1,6 +1,6 @@
 ﻿namespace BDER
 {
-    partial class Form4
+    partial class BDERAdmin
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form4));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BDERAdmin));
             this.label1 = new System.Windows.Forms.Label();
             this.newTeacher = new System.Windows.Forms.TextBox();
             this.newTeacherButton = new System.Windows.Forms.Button();

@@ -12,11 +12,11 @@ using Octokit;
 
 namespace BDER
 {
-    public partial class Form6 : Form
+    public partial class BDERIssueDialog : Form
     {
         public string issueName { get; set; }
         public string issueMain { get; set; }
-        public Form6()
+        public BDERIssueDialog()
         {
             InitializeComponent();
         }

@@ -12,7 +12,7 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using static BDER.Form2;
+using static BDER.BDERSuccessDialog;
 using System.Security.Principal;
 using Octokit;
 
@@ -24,6 +24,8 @@ namespace BDER
         public static bool loadedFile { get; set; }
         public static Event publicCreatedEvent { get; set; }
 
+        // Stoddart woz ere - 11-01-16//
+
         public appWindow()
         {
             InitializeComponent();
@@ -31,7 +33,7 @@ namespace BDER
             string contents = File.ReadAllText(@"data/pat.bio");
             if (contents == "")
             {
-                Form5 accessTokenWindow = new Form5();
+                BDERFirstTimeUseDialog accessTokenWindow = new BDERFirstTimeUseDialog();
                 accessTokenWindow.ShowDialog();
             }
             // </PUBLIC ACCESS TOKEN> //
@@ -41,14 +43,11 @@ namespace BDER
             this.Text = "BDER " + String.Format("Version {0}", version);
 
             // Check for updates //
-            /*var credentials = new Octokit.Credentials("4f4546f57c7426bbd4fe67542f6215d625f78ab7");
-            var connection = new Octokit.Connection(new Octokit.ProductHeaderValue("https://github.com/JakesCode/Biology-Department-Equipment-Revision-Version-2"))
-            {
-                Credentials = credentials
-            };
-            var octokitClient = new Octokit.GitHubClient(connection);
-            var releases = octokitClient.Release.GetAll("octokit", "octokit.net");
-            Console.WriteLine(releases);*/
+            /*var client = new GitHubClient(new ProductHeaderValue("BDER"));
+            var tokenAuth = new Credentials(File.ReadAllText(@"data\pat.bio").ToString());
+            client.Credentials = tokenAuth;
+
+            var releases = client.Release.GetAll("JakesCode", "BDER");*/
 
             // Populate Teacher Dropdown Menu //
             fillMenu();
@@ -286,7 +285,7 @@ namespace BDER
 
                 if (loadedFile == false)
                 {
-                    Form3 nicknameDialogue = new Form3();
+                    BDERNamePrompt nicknameDialogue = new BDERNamePrompt();
                     nicknameDialogue.ShowDialog();
                     var lines = (selectedTeacher + Environment.NewLine + selectedYearGroup + Environment.NewLine + selectedGroup + Environment.NewLine + selectedPeriod + Environment.NewLine + "BEGIN EQUIPMENT" + Environment.NewLine + selectedEquipment.ToString().Replace(Environment.NewLine, "NEWLINE") + Environment.NewLine + "END EQUIPMENT" + Environment.NewLine + selectedHazcards + Environment.NewLine + dissectionBox.Checked);
                     StreamWriter file = new StreamWriter(Directory.GetCurrentDirectory().ToString() + "\\history\\" + nicknameDialogue.ReturnText + ".bio");
@@ -296,7 +295,7 @@ namespace BDER
 
 
                 string url = publicCreatedEvent.HtmlLink;
-                Form2 finishedDialogue = new Form2(url);
+                BDERSuccessDialog finishedDialogue = new BDERSuccessDialog(url);
                 finishedDialogue.ShowDialog();
                 this.Close();
             } else
@@ -323,7 +322,7 @@ namespace BDER
 
         private void versionLabel_Click(object sender, EventArgs e)
         {           
-            Form4 adminPanel = new Form4();
+            BDERAdmin adminPanel = new BDERAdmin();
             adminPanel.ShowDialog();
             fillMenu();
         }
@@ -379,7 +378,7 @@ namespace BDER
                 }
             }
 
-            // Import the data into the various form elements //
+            // Import the data into the various form elements //;
             teacher.SelectedItem = importedData[0];
             yearGroup.SelectedItem = importedData[1];
             groups.SelectedItem = importedData[2];
@@ -425,7 +424,7 @@ namespace BDER
 
         private void feedback_Click(object sender, EventArgs e)
         {
-            Form6 feedbackForm = new Form6();
+            BDERIssueDialog feedbackForm = new BDERIssueDialog();
             feedbackForm.ShowDialog();
         }
 

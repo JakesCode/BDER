@@ -47,7 +47,6 @@
             this.loadButton = new System.Windows.Forms.Button();
             this.feedback = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.history = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -198,20 +197,11 @@
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
-            // history
-            // 
-            this.history.BackColor = System.Drawing.Color.PaleGreen;
-            resources.ApplyResources(this.history, "history");
-            this.history.Name = "history";
-            this.history.UseVisualStyleBackColor = false;
-            this.history.Click += new System.EventHandler(this.history_Click);
-            // 
             // appWindow
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGreen;
-            this.Controls.Add(this.history);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.feedback);
             this.Controls.Add(this.loadButton);
@@ -262,7 +252,6 @@
         private System.Windows.Forms.Button loadButton;
         private System.Windows.Forms.Label feedback;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button history;
     }
 }
 

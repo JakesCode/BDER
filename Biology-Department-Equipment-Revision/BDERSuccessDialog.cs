@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace BDER
 {
-    public partial class Form2 : Form
+    public partial class BDERSuccessDialog : Form
     {
-        public Form2(string url)
+        public BDERSuccessDialog(string url)
         {
             StaticVariables.HTMLurl = url;
             InitializeComponent();

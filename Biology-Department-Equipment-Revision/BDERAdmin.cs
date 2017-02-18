@@ -11,10 +11,10 @@ using System.IO;
 
 namespace BDER
 {
-    public partial class Form4 : Form
+    public partial class BDERAdmin : Form
     {
         public static string[] newTeachers { get; set; }
-        public Form4()
+        public BDERAdmin()
         {
             InitializeComponent();
         }
